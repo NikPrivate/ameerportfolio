@@ -1,11 +1,21 @@
+import About from "./components/About";
 import AnimatedBackground from "./components/AnimatedBackground";
-import Home from "./components/Home";
+import Intro from "./components/Intro";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="py-10 px-[100px]">
+    <div>
       <AnimatedBackground />
-      <Home />
+      <div className="py-10 px-[150px]">
+        <Nav />
+      </div>
+      <div className="px-[150px]">
+        <Intro />
+      </div>
+      <div>
+        <About />
+      </div>
     </div>
   );
 }
