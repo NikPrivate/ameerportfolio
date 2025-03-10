@@ -7,7 +7,7 @@ const About = forwardRef((props, ref) => {
       <div className="mx-auto w-fit py-10">
         <div>
           <h1 className="text-center text-4xl font-sans font-bold">
-            About <span className="text-gray-800"> Me</span>
+            About <span className="text-blue-500"> Me</span>
           </h1>
         </div>
         <div className="flex justify-center mt-5">

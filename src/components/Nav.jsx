@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = ({ refs }) => {
-  const { aboutRef, homeRef, journeyRef, skillsRef } = refs;
+  const { aboutRef, homeRef, journeyRef, skillsRef, ContactRef } = refs;
   const [scrolled, setScrolled] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -37,7 +37,7 @@ const Nav = ({ refs }) => {
       <div className="flex xl:space-x-7 xl:block hidden">
         <button
           onClick={() => scrollToSection(homeRef)}
-          className={`text-lg hover:underline font-semibold cursor-pointer ${
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
         >
@@ -45,7 +45,7 @@ const Nav = ({ refs }) => {
         </button>
         <button
           onClick={() => scrollToSection(aboutRef)}
-          className={`text-lg hover:underline font-semibold cursor-pointer ${
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
         >
@@ -53,7 +53,7 @@ const Nav = ({ refs }) => {
         </button>
         <button
           onClick={() => scrollToSection(journeyRef)}
-          className={`text-lg hover:underline font-semibold cursor-pointer ${
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
         >
@@ -61,14 +61,15 @@ const Nav = ({ refs }) => {
         </button>
         <button
           onClick={() => scrollToSection(skillsRef)}
-          className={`text-lg hover:underline font-semibold cursor-pointer ${
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
         >
           Skills
         </button>
         <button
-          className={`text-lg hover:underline font-semibold cursor-pointer ${
+          onClick={() => scrollToSection(ContactRef)}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
         >

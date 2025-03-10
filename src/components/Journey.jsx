@@ -6,7 +6,7 @@ const Journey = () => {
     <section>
       <div>
         <h1 className="text-white text-center font-sans font-bold text-4xl mt-10">
-          My Journey
+          My <span className="text-blue-500">Journey</span>
         </h1>
       </div>
       <div className="grid xl:grid-cols-2 grid-cols-1 xl:px-[150px] px-10 gap-10 mt-10">

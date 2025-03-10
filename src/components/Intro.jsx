@@ -11,7 +11,7 @@ const Intro = () => {
           <p className="text-white lg:text-6xl md:text-5xl text-4xl font-sans font-semibold">
             Hi. I'm Ameer Danial
           </p>
-          <p className="text-gray-300 lg:text-4xl md:text-3xl text-2xl font-sans mt-4 font-semibold">
+          <p className="text-blue-500 lg:text-4xl md:text-3xl text-2xl font-sans mt-4 font-semibold">
             Network Engineer
           </p>
         </div>
@@ -24,21 +24,21 @@ const Intro = () => {
           </p>
         </div>
         <div className="xl:col-span-2 col-span-1 mt-10 space-x-5">
-          <button className="text-white border px-4 py-1 rounded-lg hover:bg-white hover:text-black font-sans font-semibold cursor-pointer">
+          <button className="text-blue-500 border px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
             Hire Me
           </button>
-          <button className="text-white border px-4 py-1 rounded-lg hover:bg-white hover:text-black font-sans font-semibold cursor-pointer">
+          <button className="text-blue-500 border px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
             Let's Talk
           </button>
         </div>
         <div className="flex items-center xl:col-span-2 col-span-1 mt-[100px] space-x-4">
-          <div className="border border-white rounded-full p-2 hover:bg-gray-300 cursor-pointer hover:text-black text-gray-300">
+          <div className="border border-blue-500 rounded-full p-2 hover:bg-blue-500 cursor-pointer hover:text-white text-blue-500">
             <FaFacebookF className="text-2xl" />
           </div>
-          <div className="border border-white rounded-full p-2 hover:bg-gray-300 cursor-pointer hover:text-black text-gray-300">
+          <div className="border border-blue-500 rounded-full p-2 hover:bg-blue-500 cursor-pointer hover:text-white text-blue-500">
             <FaInstagram className="text-2xl" />
           </div>
-          <div className="border border-white rounded-full p-2 hover:bg-gray-300 cursor-pointer hover:text-black text-gray-300">
+          <div className="border border-blue-500 rounded-full p-2 hover:bg-blue-500 cursor-pointer hover:text-white text-blue-500">
             <FaLinkedinIn className="text-2xl" />
           </div>
         </div>

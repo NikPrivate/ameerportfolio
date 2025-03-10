@@ -5,6 +5,7 @@ import Intro from "./components/Intro";
 import Nav from "./components/Nav";
 import Journey from "./components/Journey";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   //create refs for each section
@@ -13,12 +14,13 @@ function App() {
   const homeRef = useRef(null);
   const journeyRef = useRef(null);
   const skillsRef = useRef(null);
+  const ContactRef = useRef(null);
 
   return (
     <div>
       <AnimatedBackground />
       <div>
-        <Nav refs={{ aboutRef, homeRef, journeyRef, skillsRef }} />
+        <Nav refs={{ aboutRef, homeRef, journeyRef, skillsRef, ContactRef }} />
       </div>
       <div ref={homeRef}>
         <Intro />
@@ -31,6 +33,9 @@ function App() {
       </div>
       <div ref={skillsRef}>
         <Skills />
+      </div>
+      <div ref={ContactRef}>
+        <Contact />
       </div>
     </div>
   );
