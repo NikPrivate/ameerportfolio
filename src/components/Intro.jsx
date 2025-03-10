@@ -5,10 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section
-      id="home"
-      className="h-screen flex flex-col justify-center items-center xl:px-[150px] px-10"
-    >
+    <section className="h-screen flex flex-col justify-center items-center xl:px-[150px] px-10">
       <div className="grid xl:grid-cols-2 grid-cols-1">
         <div className="xl:col-span-2 col-span-1">
           <p className="text-white lg:text-6xl md:text-5xl text-4xl font-sans font-semibold">

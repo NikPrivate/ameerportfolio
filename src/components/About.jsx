@@ -3,7 +3,7 @@ import { CgProfile } from "react-icons/cg";
 
 const About = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="bg-gray-200 border-white shadow-lg">
+    <section className="bg-gray-200 border-white shadow-lg">
       <div className="mx-auto w-fit py-10">
         <div>
           <h1 className="text-center text-4xl font-sans font-bold">

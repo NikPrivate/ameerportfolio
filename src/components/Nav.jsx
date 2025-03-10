@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = ({ refs }) => {
-  const { aboutRef, homeRef } = refs;
+  const { aboutRef, homeRef, journeyRef, skillsRef } = refs;
   const [scrolled, setScrolled] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -34,7 +34,7 @@ const Nav = ({ refs }) => {
       >
         Ameer.
       </h1>
-      <div className="flex xl:space-x-10 xl:block hidden">
+      <div className="flex xl:space-x-7 xl:block hidden">
         <button
           onClick={() => scrollToSection(homeRef)}
           className={`text-lg hover:underline font-semibold cursor-pointer ${
@@ -52,6 +52,15 @@ const Nav = ({ refs }) => {
           About
         </button>
         <button
+          onClick={() => scrollToSection(journeyRef)}
+          className={`text-lg hover:underline font-semibold cursor-pointer ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        >
+          Education
+        </button>
+        <button
+          onClick={() => scrollToSection(skillsRef)}
           className={`text-lg hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}
