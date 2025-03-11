@@ -47,22 +47,17 @@ const MobileNav = ({ refs }) => {
         <Sheet>
           <SheetTrigger>
             <GiHamburgerMenu
-              className={`text-xl cursor-pointer ${
+              className={`text-2xl cursor-pointer ${
                 scrolled ? "text-black" : "text-white"
               }`}
             />
           </SheetTrigger>
           <SheetContent>
-            <SheetHeader>
-              <SheetTitle className="text-xl text-5xl font-sans font-bold">
-                Ameer.
-              </SheetTitle>
-            </SheetHeader>
-            <div className="pl-10 space-y-6">
+            <div className="pl-10 space-y-6 mt-[80px] pr-10">
               <div>
                 <SheetClose asChild>
                   <button
-                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    className="text-2xl font-sans font-bold hover:text-blue-500 cursor-pointer border rounded border-black py-1 w-full text-start pl-2"
                     onClick={() => scrollToSection(homeRef)}
                   >
                     Home
@@ -72,7 +67,7 @@ const MobileNav = ({ refs }) => {
               <div>
                 <SheetClose asChild>
                   <button
-                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    className="text-2xl font-sans font-bold hover:text-blue-500 cursor-pointer border rounded border-black py-1 w-full text-start pl-2"
                     onClick={() => scrollToSection(aboutRef)}
                   >
                     About
@@ -82,7 +77,7 @@ const MobileNav = ({ refs }) => {
               <div>
                 <SheetClose asChild>
                   <button
-                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    className="text-2xl font-sans font-bold hover:text-blue-500 cursor-pointer border rounded border-black py-1 w-full text-start pl-2"
                     onClick={() => scrollToSection(journeyRef)}
                   >
                     Education
@@ -92,20 +87,20 @@ const MobileNav = ({ refs }) => {
               <div>
                 <SheetClose asChild>
                   <button
-                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    className="text-2xl font-sans font-bold hover:text-blue-500 cursor-pointer border rounded border-black py-1 w-full text-start pl-2"
                     onClick={() => scrollToSection(skillsRef)}
                   >
                     Skills
                   </button>
                 </SheetClose>
               </div>
-              <div>
+              <div className="flex justify-end">
                 <SheetClose asChild>
                   <button
-                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    className="text-lg font-sans font-semibold bg-black text-white cursor-pointer hover:opacity-80 border rounded py-1 px-2"
                     onClick={() => scrollToSection(ContactRef)}
                   >
-                    Contact
+                    Contact Me
                   </button>
                 </SheetClose>
               </div>

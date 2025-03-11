@@ -13,12 +13,18 @@ const AnimatedBackground = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       nodes = [];
-      for (let i = 0; i < 100; i++) {
+
+      // Dynamically adjust node count based on screen size
+      const area = canvas.width * canvas.height;
+      const nodeDensity = 0.00008; // Adjust for best look
+      const nodeCount = Math.floor(area * nodeDensity); // Keeps density consistent
+
+      for (let i = 0; i < nodeCount; i++) {
         nodes.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: Math.random() * 0.5 - 0.25,
-          vy: Math.random() * 0.5 - 0.25,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
           radius: Math.random() * 2 + 1,
         });
       }
@@ -26,15 +32,18 @@ const AnimatedBackground = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#242424"; // Dark grey background
+      ctx.fillStyle = "#242424";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      const interactionRadius = Math.min(canvas.width, canvas.height) * 0.1; // Scales with screen
+      const connectionDistance = Math.min(canvas.width, canvas.height) * 0.2; // Keeps same spacing feel
 
       nodes.forEach((node) => {
         const dx = mouse.x - node.x;
         const dy = mouse.y - node.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < 100) {
-          const force = (100 - distance) / 50;
+        if (distance < interactionRadius) {
+          const force = (interactionRadius - distance) / 50;
           node.x -= force * (dx / distance);
           node.y -= force * (dy / distance);
         }
@@ -44,7 +53,7 @@ const AnimatedBackground = () => {
         if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(255, 255, 255, 0.3)"; // Light grey nodes
+        ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
         ctx.fill();
       });
 
@@ -53,11 +62,11 @@ const AnimatedBackground = () => {
           const dx = a.x - b.x;
           const dy = a.y - b.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          if (distance < 150) {
+          if (distance < connectionDistance) {
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `rgba(255, 255, 255, 0.1)`; // Light grey lines
+            ctx.strokeStyle = `rgba(255, 255, 255, 0.1)`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
