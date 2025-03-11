@@ -59,46 +59,56 @@ const MobileNav = ({ refs }) => {
               </SheetTitle>
             </SheetHeader>
             <div className="pl-10 space-y-6">
-              <SheetClose asChild>
-                <button
-                  className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
-                  onClick={() => scrollToSection(homeRef)}
-                >
-                  Home
-                </button>
-              </SheetClose>
-              <SheetClose asChild>
-                <button
-                  className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
-                  onClick={() => scrollToSection(aboutRef)}
-                >
-                  About
-                </button>
-              </SheetClose>
-              <SheetClose asChild>
-                <button
-                  className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
-                  onClick={() => scrollToSection(journeyRef)}
-                >
-                  Education
-                </button>
-              </SheetClose>
-              <SheetClose asChild>
-                <button
-                  className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
-                  onClick={() => scrollToSection(skillsRef)}
-                >
-                  Skills
-                </button>
-              </SheetClose>
-              <SheetClose asChild>
-                <button
-                  className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
-                  onClick={() => scrollToSection(ContactRef)}
-                >
-                  Contact
-                </button>
-              </SheetClose>
+              <div>
+                <SheetClose asChild>
+                  <button
+                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    onClick={() => scrollToSection(homeRef)}
+                  >
+                    Home
+                  </button>
+                </SheetClose>
+              </div>
+              <div>
+                <SheetClose asChild>
+                  <button
+                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    onClick={() => scrollToSection(aboutRef)}
+                  >
+                    About
+                  </button>
+                </SheetClose>
+              </div>
+              <div>
+                <SheetClose asChild>
+                  <button
+                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    onClick={() => scrollToSection(journeyRef)}
+                  >
+                    Education
+                  </button>
+                </SheetClose>
+              </div>
+              <div>
+                <SheetClose asChild>
+                  <button
+                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    onClick={() => scrollToSection(skillsRef)}
+                  >
+                    Skills
+                  </button>
+                </SheetClose>
+              </div>
+              <div>
+                <SheetClose asChild>
+                  <button
+                    className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
+                    onClick={() => scrollToSection(ContactRef)}
+                  >
+                    Contact
+                  </button>
+                </SheetClose>
+              </div>
             </div>
           </SheetContent>
         </Sheet>
