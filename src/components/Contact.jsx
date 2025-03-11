@@ -9,17 +9,17 @@ const Contact = () => {
           Contact <span className="text-blue-500">Me!</span>
         </h1>
       </div>
-      <div className="grid xl:grid-cols-2 grid-cols-1 gap-5 mt-10">
+      <div className="grid xl:grid-cols-2 grid-cols-1 gap-5 mt-10 xl:px-[365px]">
         <div className="col-span-1">
           <div className="flex xl:justify-end justify-center">
             <input
-              className="border-2 w-96 border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
+              className="border-2 w-full border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
               placeholder="Full Name"
             />
           </div>
           <div className="flex xl:justify-end justify-center mt-4">
             <input
-              className="border-2 w-96 border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
+              className="border-2 w-full border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
               placeholder="Mobile Number"
             />
           </div>
@@ -27,13 +27,13 @@ const Contact = () => {
         <div className="col-span-1">
           <div className="flex xl:justify-start justify-center">
             <input
-              className="border-2 w-96 border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
+              className="border-2 w-full border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
               placeholder="Email Address"
             />
           </div>
           <div className="flex xl:justify-start justify-center mt-4">
             <input
-              className="border-2 w-96 border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
+              className="border-2 w-full border-blue-500 rounded bg-[#242424] text-white h-10 pl-2"
               placeholder="Email Subject"
             />
           </div>
