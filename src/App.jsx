@@ -7,6 +7,7 @@ import Journey from "./components/Journey";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Copyright from "./components/Copyright";
+import MobileNav from "./components/MobileNav";
 
 function App() {
   //create refs for each section
@@ -20,8 +21,13 @@ function App() {
   return (
     <div>
       <AnimatedBackground />
-      <div>
+      <div className="xl:block hidden">
         <Nav refs={{ aboutRef, homeRef, journeyRef, skillsRef, ContactRef }} />
+      </div>
+      <div className="xl:hidden block">
+        <MobileNav
+          refs={{ aboutRef, homeRef, journeyRef, skillsRef, ContactRef }}
+        />
       </div>
       <div ref={homeRef}>
         <Intro />

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = ({ refs }) => {
   const { aboutRef, homeRef, journeyRef, skillsRef, ContactRef } = refs;
@@ -34,7 +33,7 @@ const Nav = ({ refs }) => {
       >
         Ameer.
       </h1>
-      <div className="flex xl:space-x-7 xl:block hidden">
+      <div className="flex xl:space-x-7">
         <button
           onClick={() => scrollToSection(homeRef)}
           className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
@@ -75,13 +74,6 @@ const Nav = ({ refs }) => {
         >
           Contact
         </button>
-      </div>
-      <div className="xl:hidden block">
-        <GiHamburgerMenu
-          className={`text-2xl cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
-        />
       </div>
     </nav>
   );
