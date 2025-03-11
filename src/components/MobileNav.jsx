@@ -8,6 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { SheetClose } from "./ui/sheet";
 
 const MobileNav = ({ refs }) => {
   const { aboutRef, homeRef, journeyRef, skillsRef, ContactRef } = refs;
@@ -58,46 +59,46 @@ const MobileNav = ({ refs }) => {
               </SheetTitle>
             </SheetHeader>
             <div className="pl-10 space-y-6">
-              <nav>
+              <SheetClose asChild>
                 <button
                   className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
                   onClick={() => scrollToSection(homeRef)}
                 >
                   Home
                 </button>
-              </nav>
-              <nav>
+              </SheetClose>
+              <SheetClose asChild>
                 <button
                   className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
                   onClick={() => scrollToSection(aboutRef)}
                 >
                   About
                 </button>
-              </nav>
-              <nav>
+              </SheetClose>
+              <SheetClose asChild>
                 <button
                   className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
                   onClick={() => scrollToSection(journeyRef)}
                 >
                   Education
                 </button>
-              </nav>
-              <nav>
+              </SheetClose>
+              <SheetClose asChild>
                 <button
                   className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
                   onClick={() => scrollToSection(skillsRef)}
                 >
                   Skills
                 </button>
-              </nav>
-              <nav>
+              </SheetClose>
+              <SheetClose asChild>
                 <button
                   className="text-3xl font-sans font-bold hover:text-blue-500 cursor-pointer"
                   onClick={() => scrollToSection(ContactRef)}
                 >
                   Contact
                 </button>
-              </nav>
+              </SheetClose>
             </div>
           </SheetContent>
         </Sheet>
