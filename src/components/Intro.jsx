@@ -24,10 +24,10 @@ const Intro = () => {
           </p>
         </div>
         <div className="xl:col-span-2 col-span-1 mt-10 space-x-5">
-          <button className="text-blue-500 border px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
+          <button className="text-blue-500 border border-blue-500 px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
             Hire Me
           </button>
-          <button className="text-blue-500 border px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
+          <button className="text-blue-500 border border-blue-500 px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-black font-sans font-semibold cursor-pointer">
             Let's Talk
           </button>
         </div>
