@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Journey from "./components/Journey";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Copyright from "./components/Copyright";
 
 function App() {
   //create refs for each section
@@ -36,6 +37,9 @@ function App() {
       </div>
       <div ref={ContactRef}>
         <Contact />
+      </div>
+      <div>
+        <Copyright refs={homeRef} />
       </div>
     </div>
   );

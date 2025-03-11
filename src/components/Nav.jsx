@@ -77,7 +77,11 @@ const Nav = ({ refs }) => {
         </button>
       </div>
       <div className="xl:hidden block">
-        <GiHamburgerMenu className="text-2xl cursor-pointer" />
+        <GiHamburgerMenu
+          className={`text-2xl cursor-pointer ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        />
       </div>
     </nav>
   );
