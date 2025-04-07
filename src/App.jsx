@@ -16,17 +16,17 @@ function App() {
   const homeRef = useRef(null);
   const journeyRef = useRef(null);
   const skillsRef = useRef(null);
-  const ContactRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <div>
       <AnimatedBackground />
       <div className="xl:block hidden">
-        <Nav refs={{ aboutRef, homeRef, journeyRef, skillsRef, ContactRef }} />
+        <Nav refs={{ aboutRef, homeRef, journeyRef, skillsRef, contactRef }} />
       </div>
       <div className="xl:hidden block">
         <MobileNav
-          refs={{ aboutRef, homeRef, journeyRef, skillsRef, ContactRef }}
+          refs={{ aboutRef, homeRef, journeyRef, skillsRef, contactRef }}
         />
       </div>
       <div ref={homeRef}>
@@ -41,7 +41,7 @@ function App() {
       <div ref={skillsRef}>
         <Skills />
       </div>
-      <div ref={ContactRef}>
+      <div ref={contactRef}>
         <Contact />
       </div>
       <div>
