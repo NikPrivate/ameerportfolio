@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Nav = ({ refs }) => {
-  const { aboutRef, homeRef, journeyRef, skillsRef, ContactRef } = refs;
+  const { aboutRef, homeRef, journeyRef, skillsRef, contactRef } = refs;
   const [scrolled, setScrolled] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -67,7 +67,7 @@ const Nav = ({ refs }) => {
           Skills
         </button>
         <button
-          onClick={() => scrollToSection(ContactRef)}
+          onClick={() => scrollToSection(contactRef)}
           className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
             scrolled ? "text-black" : "text-white"
           }`}

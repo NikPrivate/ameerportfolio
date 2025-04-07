@@ -11,7 +11,7 @@ import {
 import { SheetClose } from "./ui/sheet";
 
 const MobileNav = ({ refs }) => {
-  const { aboutRef, homeRef, journeyRef, skillsRef, ContactRef } = refs;
+  const { aboutRef, homeRef, journeyRef, skillsRef, contactRef } = refs;
   const [scrolled, setScrolled] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -98,7 +98,7 @@ const MobileNav = ({ refs }) => {
                 <SheetClose asChild>
                   <button
                     className="text-lg font-sans font-semibold bg-black text-white cursor-pointer hover:opacity-80 border rounded py-1 px-2"
-                    onClick={() => scrollToSection(ContactRef)}
+                    onClick={() => scrollToSection(contactRef)}
                   >
                     Contact Me
                   </button>
