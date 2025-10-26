@@ -3,7 +3,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <section className="py-10 px-10 xl:px-0 bg-[#081b29]">
+    <section className="py-[100px] px-10 xl:px-0 bg-[#081b29]">
       <div className="pt-10">
         <h1 className="text-4xl text-white font-bold font-sans text-center">
           Contact <span className="text-blue-500">Me!</span>

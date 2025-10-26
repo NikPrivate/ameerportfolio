@@ -3,7 +3,7 @@ import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   return (
-    <section className="bg-[#122e43] py-10 pt-10">
+    <section className="bg-[#122e43] py-[100px]">
       <div>
         <h1 className="text-center font-sans font-bold text-4xl text-white">
           My <span className="text-blue-500">Skills</span>

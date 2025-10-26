@@ -3,7 +3,7 @@ import { FaCircle } from "react-icons/fa";
 
 const Journey = () => {
   return (
-    <section className="bg-[#081b29] pb-10">
+    <section className="bg-[#081b29] py-[100px]">
       <div>
         <h1 className="text-white text-center font-sans font-bold text-4xl pt-10">
           My <span className="text-blue-500">Journey</span>

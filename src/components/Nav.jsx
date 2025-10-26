@@ -27,38 +27,33 @@ const Nav = ({ refs }) => {
       }`}
     >
       <h1
-        className={`lg:text-3xl md:text-2xl text-2xl font-sans font-semibold text-white`}
+        className={`lg:text-3xl md:text-2xl text-2xl font-sans font-semibold text-white cursor-pointer`}
+        onClick={() => scrollToSection(homeRef)}
       >
         Ameer.
       </h1>
       <div className="flex xl:space-x-7">
         <button
-          onClick={() => scrollToSection(homeRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
-        >
-          Home
-        </button>
-        <button
           onClick={() => scrollToSection(aboutRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
+          className={`text-lg hover:text-blue-500 font-semibold cursor-pointer text-white`}
         >
           About
         </button>
         <button
           onClick={() => scrollToSection(journeyRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
+          className={`text-lg hover:text-blue-500 font-semibold cursor-pointer text-white`}
         >
           Education
         </button>
         <button
           onClick={() => scrollToSection(skillsRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
+          className={`text-lg hover:text-blue-500  font-semibold cursor-pointer text-white`}
         >
           Skills
         </button>
         <button
           onClick={() => scrollToSection(contactRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
+          className={`text-lg hover:text-blue-500  font-semibold cursor-pointer text-white`}
         >
           Contact
         </button>
