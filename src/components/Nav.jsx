@@ -23,54 +23,42 @@ const Nav = ({ refs }) => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full h-16 text-white flex items-center justify-between xl:px-[150px] lg:px-[120px] md:px-[120px] px-[40px] z-50 ${
-        scrolled ? "bg-white" : "bg-transparent"
+        scrolled ? "bg-[#122e43]" : "bg-transparent"
       }`}
     >
       <h1
-        className={`lg:text-3xl md:text-2xl text-2xl font-sans font-semibold ${
-          scrolled ? "text-black" : "text-white"
-        }`}
+        className={`lg:text-3xl md:text-2xl text-2xl font-sans font-semibold text-white`}
       >
         Ameer.
       </h1>
       <div className="flex xl:space-x-7">
         <button
           onClick={() => scrollToSection(homeRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
         >
           Home
         </button>
         <button
           onClick={() => scrollToSection(aboutRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
         >
           About
         </button>
         <button
           onClick={() => scrollToSection(journeyRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
         >
           Education
         </button>
         <button
           onClick={() => scrollToSection(skillsRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
         >
           Skills
         </button>
         <button
           onClick={() => scrollToSection(contactRef)}
-          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`text-lg hover:text-blue-500 hover:underline font-semibold cursor-pointer text-white`}
         >
           Contact
         </button>

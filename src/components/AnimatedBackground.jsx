@@ -32,25 +32,29 @@ const AnimatedBackground = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#242424";
+      ctx.fillStyle = "#081b29"; // ✅ Updated background color
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      const interactionRadius = Math.min(canvas.width, canvas.height) * 0.1; // Scales with screen
-      const connectionDistance = Math.min(canvas.width, canvas.height) * 0.2; // Keeps same spacing feel
+      const interactionRadius = Math.min(canvas.width, canvas.height) * 0.1;
+      const connectionDistance = Math.min(canvas.width, canvas.height) * 0.2;
 
       nodes.forEach((node) => {
         const dx = mouse.x - node.x;
         const dy = mouse.y - node.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
+
         if (distance < interactionRadius) {
           const force = (interactionRadius - distance) / 50;
           node.x -= force * (dx / distance);
           node.y -= force * (dy / distance);
         }
+
         node.x += node.vx;
         node.y += node.vy;
+
         if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
         if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
+
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
@@ -66,12 +70,13 @@ const AnimatedBackground = () => {
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `rgba(255, 255, 255, 0.1)`;
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         });
       });
+
       requestAnimationFrame(animate);
     };
 

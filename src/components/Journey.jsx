@@ -3,9 +3,9 @@ import { FaCircle } from "react-icons/fa";
 
 const Journey = () => {
   return (
-    <section>
+    <section className="bg-[#081b29] pb-10">
       <div>
-        <h1 className="text-white text-center font-sans font-bold text-4xl mt-10">
+        <h1 className="text-white text-center font-sans font-bold text-4xl pt-10">
           My <span className="text-blue-500">Journey</span>
         </h1>
       </div>
